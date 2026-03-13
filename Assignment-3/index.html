@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FashionStore</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark p-3">
+<div class="container">
+
+<h3 class="text-white">FashionStore</h3>
+
+<input type="text" id="search" class="form-control w-50" placeholder="Search products">
+
+<a href="cart.html" class="btn btn-warning">
+🛒 Cart (<span id="cartCount">0</span>)
+</a>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-text">
+<h1>New Fashion Collection</h1>
+<p>Up to 60% OFF</p>
+</div>
+</section>
+
+
+<!-- CATEGORY FILTER -->
+<div class="container text-center mt-4">
+
+<button class="btn btn-outline-dark m-1" onclick="filterProducts('All')">All</button>
+<button class="btn btn-outline-dark m-1" onclick="filterProducts('Men')">Men</button>
+<button class="btn btn-outline-dark m-1" onclick="filterProducts('Women')">Women</button>
+<button class="btn btn-outline-dark m-1" onclick="filterProducts('Kids')">Kids</button>
+<button class="btn btn-outline-dark m-1" onclick="filterProducts('Electronics')">Electronics</button>
+<button class="btn btn-outline-dark m-1" onclick="filterProducts('Home & Kitchen')">Home & Kitchen</button>
+<button class="btn btn-outline-dark m-1" onclick="filterProducts('Sports')">Sports</button>
+
+</div>
+
+<!-- SORT OPTIONS -->
+<div class="container text-center mt-2">
+<button class="btn btn-outline-primary m-1" onclick="sortProducts('price-asc')">Price: Low to High</button>
+<button class="btn btn-outline-primary m-1" onclick="sortProducts('price-desc')">Price: High to Low</button>
+<button class="btn btn-outline-primary m-1" onclick="sortProducts('name')">Name: A to Z</button>
+</div>
+
+
+<!-- PRODUCTS -->
+<div class="container mt-5">
+<div class="row" id="products"></div>
+</div>
+
+<script src="script.js"></script>
+
+<!-- Notification -->
+<div id="notification" class="notification">
+    ✅ Product Added to Cart!
+</div>
+
+</body>
+</html>
