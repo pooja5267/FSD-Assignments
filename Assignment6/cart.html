@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark p-3">
+<div class="container">
+
+<h3 class="text-white">FashionStore</h3>
+
+<a href="index.html" class="btn btn-warning">
+⬅ Continue Shopping
+</a>
+
+</div>
+</nav>
+
+
+<div class="container mt-5">
+
+<h2 class="mb-4 text-center">🛒 Your Shopping Cart</h2>
+
+<div id="cart-items" class="mb-4"></div>
+
+<div class="cart-total text-center">
+<h4 class="mb-3">Total: ₹<span id="cart-total">0</span></h4>
+
+<button class="btn btn-success btn-checkout" onclick="checkout()">
+Proceed to Checkout
+</button>
+</div>
+
+</div>
+
+<!-- Notification -->
+<div id="notification" class="notification">
+    ✅ Order Placed Successfully!
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
